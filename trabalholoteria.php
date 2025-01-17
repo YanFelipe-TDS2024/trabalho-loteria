@@ -32,7 +32,7 @@ function pegarQuantidadeNumeros($MinimoNumeros, $MaximoNumeros, &$Contador){
             system("clear");
 
             print("Número fora do intervalo apresentado!\n\n");
-            readline("[PRESSIONE QUALQUER TECLA PARA TENTAR NOVAMENTE]");
+            readline("[PRESSIONE ENTER PARA TENTAR NOVAMENTE]");
         }
     }
 
