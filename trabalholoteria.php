@@ -100,6 +100,8 @@ function gerarApostas($ComecoCartela, $FinalCartela, $MinimoNumeros, $MaximoNume
         array_push($TodasApostas, $Aposta);
     }
 
+    system("clear");
+
     if($NumeroApostas == 1){
         print("Aqui está a sua aposta!\n");
     }else{
@@ -117,9 +119,9 @@ function gerarApostas($ComecoCartela, $FinalCartela, $MinimoNumeros, $MaximoNume
         print("(R$" . number_format($PRECOS_APOSTAS[$Loteria][$Numeros - $MinimoNumeros],2,",",".") . ")");
     }
 
-    print("\n\nVALOR TOTAL: R$" . number_format($ValorTotal,2,",","."));
+    print("\n\nVALOR TOTAL: R$" . number_format($ValorTotal,2,",",".") . "\n\n");
 
-    readline("\n\n[PRESSIONE QUALQUER TECLA PARA CONTINUAR]");
+    readline("[PRESSIONE ENTER PARA CONTINUAR]");
 }
 
 function selecionarLoteria(){
